@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
-import Posts from './components/Posts';
-import PostLoadingComponent from './components/PostLoading';
+import '../App.css';
+import Posts from '../components/Posts';
+import PostLoadingComponent from '../components/PostLoading';
 
-function App() {
+function VideosPage() {
 	const PostLoading = PostLoadingComponent(Posts);
 	const [appState, setAppState] = useState({
 		loading: false,
@@ -26,4 +26,4 @@ function App() {
 		</div>
 	);
 }
-export default App;
+export default VideosPage;
