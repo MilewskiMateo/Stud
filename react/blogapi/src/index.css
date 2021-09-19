@@ -12,8 +12,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  background-image: linear-gradient(black, transparent 70%);
-  background-size: 100% 100%;
+  background-image: url("./assets/blue.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 

@@ -1,18 +1,17 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import {makeStyles} from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     footer: {
-        borderTop: `1px solid ${theme.palette.divider}`,
-        marginTop: theme.spacing(8),
-        paddingTop: theme.spacing(3),
-        paddingBottom: theme.spacing(3),
-        [theme.breakpoints.up('sm')]: {
-            paddingTop: theme.spacing(6),
-            paddingBottom: theme.spacing(6),
-        },
+        border: `1px solid white`,
+        backgroundColor: '#3b27ba',
+        color: "white",
+        height: '30px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginBottom:'10px',
     },
 }));
 
@@ -20,10 +19,8 @@ const useStyles = makeStyles((theme) => ({
 function Footer() {
     const classes = useStyles();
     return (
-        <Container maxWidth="md" component="footer" className={classes.footer}>
-            <Typography variant="body2" color="textSecondary" align="center">
-                {'Copyright © Mateusz Milewski.'}
-            </Typography>
+        <Container component="footer" className={classes.footer}>
+            {'Copyright © Mateusz Milewski.'}
         </Container>
     );
 }
